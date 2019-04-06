@@ -12,7 +12,7 @@ const forecast=(latitude,longitude,callback)=>{
             callback("undefined loaction", undefined);
         }
         else{
-        callback(undefined,body.daily.data[0].summary);
+        callback(undefined,body.daily.data[0].summary+ "high :"+body.daily.data[0].temperatureHigh);
         }
     })
     }
